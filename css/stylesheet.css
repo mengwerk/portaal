@@ -1,0 +1,129 @@
+@media (max-width: 815px) {
+    .footer {
+        flex-direction: column; /* Stacks elements vertically */
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 200px; /* Increases the size of the logo */
+        /* margin-bottom: 20px; */
+    }
+
+    #adres {
+        flex-direction: column !important; /* Stacks elements vertically */
+    }
+}
+
+
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+body, button, input {
+    font-family: 'Roboto Mono', monospace; /* Apply Roboto Mono */
+}
+
+#subtitel{
+    padding-left: 150px;
+    margin-top: -10px;
+}
+
+#adres{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.logo-container {
+    text-align: center;
+    /* margin-bottom: 50px; Adjusts the position relative to the login container */
+}
+
+.login-container {
+    width: 300px;
+    padding: 20px;
+    /* background-color: #fff; */
+    text-align: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 400px; /* Increases the size of the logo */
+    /* margin-bottom: 20px; */
+}
+
+.login-form input,
+.login-button,
+.forgot-password-button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 0px solid #ddd;
+    outline: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.login-button, .forgot-password-button {
+    border: none;
+    background-color: #ffdd00;
+    /* color: white; */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.forgot-password-button {
+    background-color: transparent;
+    margin-top: 10px;
+    border: solid 1px;
+    border-color: lightgray;
+}
+
+.login-button:hover{
+    background-color: green;
+    color: white;
+}
+
+.forgot-password-button:hover {
+    background-color: #db8e86;
+}
+
+.footer {
+    position: fixed; /* Fixes the footer to the bottom of the page */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex; /* Aligns content horizontally */
+    justify-content: space-around; /* Distributes content evenly */
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.footer a, .footer p {
+    margin: 0 10px; /* Adds spacing between items */
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px;
+
+}
+
+.footer a:hover {
+    color: #2980b9;
+}
+
+.footer p {
+    color: #555; /* Adjusts color for non-link text */
+}
+
