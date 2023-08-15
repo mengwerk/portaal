@@ -1,0 +1,99 @@
+h2{
+    margin-bottom: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    width: 150px;
+}
+
+.user-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 60px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%; /* Aligns the top of the dropdown with the bottom of the user-menu */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #555;
+}
+
+.user-menu:hover .dropdown-menu {
+    display: block;
+}
+
+.username {
+    font-size: 16px;
+    margin-right: 10px; /* Add some space between the username and the icon */
+    color: #555; /* Set the color of the username text */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 equal columns */
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    justify-items: center;
+    align-items: start;
+    margin-top: 80px; /* Adjust to make space for the header */
+}
+
+.grid-item:hover{
+    background-color: #ffdd00;
+    height: 303px;
+    padding: 17px;
+}
+
+.grid-item {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    height: 300px; /* Make all grid items equal height */
+    width: 300px;
+}
+
+.grid-image {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    border-radius: 30px;
+}
+
+.contacten p{
+    font-size: 11px;
+}
+
+.moodboard{
+    object-fit: cover;
+}
