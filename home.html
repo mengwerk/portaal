@@ -1,100 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/stylesheet.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="stylesheet" href="css/home.css" />
     <title>Mengwerk Service Hub - Dashboard</title>
-</head>
-<body>
-    <header class="header">
-        <img src="./images/Logo_Zwart.png" alt="Mengwerk Logo" class="logo">
-        <div class="user-menu">
-            <span class="username">Ron Dudderie</span> <!-- Add this line for the username -->
-            <img src="./images/user100.png" alt="User Icon" class="user-icon">
-            <div class="dropdown-menu">
-                <a href="./password.html">Wachtwoord veranderen</a>
-                <a href="./index.html">Uitloggen</a>
-            </div>
-        </div>
-    </header>
-   
+  </head>
+
+  <body>
     
-    <div class="grid-container">
+
+
+    <div class="content-section" id="home">
+      <!-- Grid -->
+      <div class="grid-container">
         <div class="grid-item">
-            <h2>Planning</h2>
-            <div>
-                <h5>ma 13/1 09:00</h5>
-                <h4><b>Aflevering 7</b></h4>
-            </div>
-            <div>
-                <h5>di 14/1 09:00</h5>
-                <h4><b>Aflevering 8</b></h4>
-            </div>
+          <h2>Planning</h2>
+          <div>
+            <h5>ma 13/1 09:00</h5>
+            <h4><b>Aflevering 7</b></h4>
+          </div>
+          <div>
+            <h5>di 14/1 09:00</h5>
+            <h4><b>Aflevering 8</b></h4>
+          </div>
         </div>
+
         <div class="grid-item">
-            <h2>Status</h2>
-            <img src="./images/status.png" alt="Image" class="grid-image">
-        </div>
-        <div class="grid-item">
-            <h2>Financieel overzicht</h2>
-            <img src="./images/invoices.jpg" alt="Image" class="grid-image">
+          <h2>Financiën</h2>
+          <img src="./images/invoices.jpg" alt="Image" class="grid-image" />
         </div>
         <div class="grid-item contacten">
-            <h2>Contacten</h2>
-            <div>
-                <h4 class="contactname">Piet R.O. Djoeser</h4>
-                <p>prodjoeser@productie.nl</p>
-                <p>06-12345678</p>
-            </div>
+          <h2>Contacten</h2>
+          <div>
+            <h4 class="contactname">Piet R.O. Djoeser</h4>
+            <p>prodjoeser@productie.nl</p>
+            <p>06-12345678</p>
+          </div>
 
-            <div>
-                <h4 class="contactname">Ron E. Gisseur</h4>
-                <p>regisseur@productie.nl</p>
-                <p>06-12345678</p>
-            </div>
+          <div>
+            <h4 class="contactname">Ron E. Gisseur</h4>
+            <p>regisseur@productie.nl</p>
+            <p>06-12345678</p>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <h2>Muziekgegevens</h2>
+          <img src="./images/pdf.png" alt="Image" class="grid-image" />
+        </div>
+        <div class="grid-item status">
+          <h2>Status</h2>
+          <img src="./images/status2.png" alt="Image" class="grid-image" />
         </div>
         <div class="grid-item">
-            <h2>Muziekgegevens</h2>
-            <img src="./images/pdf.png" alt="Image" class="grid-image">
-        </div>
-        
-        <div class="grid-item">
-            <h2>Aanleverspecificaties</h2>
-            <img src="./images/aanlever.jpg" alt="Image" class="grid-image">
+          <h2>Aanlevering</h2>
+          <img src="./images/aanlever.jpg" alt="Image" class="grid-image" />
         </div>
         <div class="grid-item">
-            <h2>Moodboard</h2>
-            <img src="./images/moodboard.jpeg" alt="Image" class="grid-image moodboard">
+          <h2>Moodboard</h2>
+          <img
+            src="./images/moodboard.png"
+            alt="Image"
+            class="grid-image moodboard"
+          />
         </div>
         <div class="grid-item">
-            <h2>Wie zijn wij</h2>
-            <img src="./images/wiezijnwij.png" alt="Image" class="grid-image">
+          <h2>Wie zijn wij</h2>
+          <img src="./images/wiezijnwij.png" alt="Image" class="grid-image" />
         </div>
         <div class="grid-item">
-            <h2>Datagebruik</h2>
-            <img src="./images/data.png" alt="Image" class="grid-image">
+          <h2>Datagebruik</h2>
+          <img src="./images/data2.jpeg" alt="Image" class="grid-image" />
         </div>
         <div class="grid-item">
-            <h2>Klimaat Voetafdruk</h2>
-            <img src="./images/footprint.jpeg" alt="Image" class="grid-image">
+          <h2>Klimaat Voetafdruk</h2>
+          <img src="./images/footprint.jpeg" alt="Image" class="grid-image" />
         </div>
+      </div>
     </div>
-    
-    
 
+    <!-- Planning -->
+    <div class="content-section" id="planningList">
+      <div class="planblokcontainer">
+        <p class="planblokdatum">Dinsdag 22 augustus</p>
 
-    <footer class="footer">
-        <a href="mailto:info@mengwerk.nl">Mail ons!</a>
-        <p>Bel ons: 035-3031485</p>
-        <div id="adres">
-          <p>Catharina van Renneslaan</p>
-          <p>1217 CX, Hilversum</p>
+        <div class="planblokje audio">
+          <div class="subProjectLabel">
+            <p>Aflevering 1</p>
+          </div>
+          <div class="timeLabel">
+            <p>09:00 - 17:30</p>
+          </div>
+          <div class="klusdata">
+            <h5>Aflevering + Jinek Promo</h5>
+            <p>Audionabewerking</p>
+          </div>
+          <div class="planblokjeLabel">
+            <img src="./images/Erik_2021.jpg" alt="" />
+            <p>Erik</p>
+          </div>
         </div>
-        <a href="https://www.mengwerk.nl" target="_blank">Mengwerk.nl</a>
-      </footer>
 
-</body>
+        <div class="planblokje kleur">
+          <div class="subProjectLabel">
+            <p>Aflevering 1</p>
+          </div>
+          <div class="timeLabel">
+            <p>09:00 - 17:30</p>
+          </div>
+          <div class="klusdata">
+            <h5>Aflevering + Jinek Promo</h5>
+            <p>Kleurcorrectie</p>
+          </div>
+          <div class="planblokjeLabel">
+            <img src="./images/Jimmy_2021.jpg" alt="" />
+            <p>Jimmy</p>
+          </div>
+        </div>
+
+        <!-- <div class="planblokLijn"></div> -->
+        <p class="planblokdatum">Woensdag 23 augustus</p>
+
+        <div class="planblokje audio">
+          <div class="subProjectLabel">
+            <p>Aflevering 2</p>
+          </div>
+          <div class="timeLabel">
+            <p>09:00 - 17:30</p>
+          </div>
+          <div class="klusdata">
+            <h5>Aflevering + Online Item</h5>
+            <p>Audionabewerking</p>
+          </div>
+          <div class="planblokjeLabel">
+            <img src="./images/Erik_2021.jpg" alt="" />
+            <p>Erik</p>
+          </div>
+        </div>
+
+        <div class="planblokje kleur">
+          <div class="subProjectLabel">
+            <p>Aflevering 2</p>
+          </div>
+          <div class="timeLabel">
+            <p>09:00 - 17:30</p>
+          </div>
+          <div class="klusdata">
+            <h5>Aflevering + Online Item</h5>
+            <p>Kleurcorrectie</p>
+          </div>
+          <div class="planblokjeLabel">
+            <img src="./images/Jimmy_2021.jpg" alt="" />
+            <p>Jimmy</p>
+          </div>
+        </div>
+
+        <!-- <div class="planblokLijn"></div> -->
+        <p class="planblokdatum">Vrijdag 25 augustus</p>
+
+        <div class="planblokje inspreken">
+          <div class="subProjectLabel">
+            <p>Aflevering 1 & Aflevering 2</p>
+          </div>
+          <div class="timeLabel">
+            <p>09:00 - 12:00</p>
+          </div>
+          <div class="klusdata">
+            <h5>Inspreken Martijn Afl 1 + 2</h5>
+            <p>Audionabewerking (Inspreken)</p>
+          </div>
+          <div class="planblokjeLabel">
+            <img src="./images/Erik_2021.jpg" alt="" />
+            <p>Erik</p>
+          </div>
+        </div>
+
+        <div class="planblokje audio">
+          <div class="subProjectLabel">
+            <p>Aflevering 1 & Aflevering 2</p>
+          </div>
+          <div class="timeLabel">
+            <p>12:30 - 17:30</p>
+          </div>
+          <div class="klusdata">
+            <h5>Inmixen Afl 1 + 2</h5>
+            <p>Audionabewerking</p>
+          </div>
+          <div class="planblokjeLabel">
+            <img src="./images/Erik_2021.jpg" alt="" />
+            <p>Erik</p>
+          </div>
+        </div>
+
+        <div class="planblokje media">
+          <div class="subProjectLabel">
+            <p>Aflevering 1 & Aflevering 2</p>
+          </div>
+          <div class="timeLabel">
+            <p>Einde Dag</p>
+          </div>
+          <div class="klusdata">
+            <h5>MXF Oplevering Afl 1 + 2</h5>
+            <p>Mediamanagement</p>
+          </div>
+          <div class="planblokjeLabel">
+            <img src="./images/Kiki_2021.png" alt="" />
+            <p>Kiki</p>
+          </div>
+
+
+        </div>
+        <!-- <div class="planblokLijn"></div> -->
+
+      </div>
+    </div>
+
+    <div class="content-section" id="facturatie">
+      Facturatie content here...
+    </div>
+    <!-- Add more sections as needed -->
+
+    <div class="header">
+      <div id="logos">
+        <!-- <img id="talpalogo" src="./images/talpa.jpeg" alt="" /> -->
+        <img src="./images/Logo_Wit.png" alt="Mengwerk Logo" class="logo" />
+      </div>
+      <div class="filters">
+        <div class="project-menu">
+          <h5 id="projectheader">The Next Project: Seizoen 2</h5>
+          <div class="project-arrow">
+            <!-- Arrow container -->
+            <img
+              id="arrowdown"
+              src="./images/arrowdown.png"
+              alt="User Icon"
+              class="user-icon"
+            />
+            <div class="project-dropdown-menu">
+              <!-- Dropdown content -->
+              <a href="#project1">☑️ Alle Projecten</a>
+              <a href="#project1">🔘 The Next Project: Seizoen 2</a>
+              <a href="#project2">🔘 Project Kids: Seizoen 1</a>
+              <a href="#project3">🔘 Love and Projects: Seizoen 4</a>
+            </div>
+          </div>
+        </div>
+        <!-- <p class="filtersTitle">Filters:</p>
+        <div class="tag">☑️ 🎵 Audionabewerking</div>
+        <div class="tag">☑️ 🎤 Inspreken</div>
+        <div class="tag">☑️ 🌈 Kleurcorrectie</div>
+        <div class="tag" id="MXF">🔘 💾 MXF Delivery</div>
+        <p class="filtersTitle">⨂</p> -->
+      </div>
+
+      <div class="user-menu">
+        <span class="username">Ron Dudderie</span>
+        <img src="./images/user100.png" alt="User Icon" class="user-icon" />
+        <div class="dropdown-menu">
+          <a href="./password.html">Wachtwoord veranderen</a>
+          <a href="./index.html">Uitloggen</a>
+        </div>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <nav>
+        <a href="#" data-target="home">Home</a>
+        <a href="#" data-target="planningList" class="active-link">Planning Lijst</a>
+        <a href="#" data-target="planningBlocks" class="">Planning Blokken</a>
+        <a href="#" data-target="facturatie">Facturatie</a>
+        <!-- More links as needed -->
+
+        <a href="#algemeen">Muziekgegevens</a>
+        <a href="#algemeen">Aanleveren</a>
+        <a href="#algemeen">Over ons</a>
+        <hr />
+        <a href="#algemeen">Instellingen</a>
+      </nav>
+    </aside>
+
+    <script>
+      document.getElementById("planningList").classList.add("active-content");
+
+      document.querySelectorAll(".sidebar nav a").forEach((link) => {
+        link.addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent default navigation
+
+          // Remove the 'active-link' class from all other links
+          document.querySelectorAll(".sidebar nav a").forEach((otherLink) => {
+            if (otherLink !== this) otherLink.classList.remove("active-link");
+          });
+
+          // Remove the 'active-content' class from all content sections
+          document.querySelectorAll(".content-section").forEach((section) => {
+            section.classList.remove("active-content");
+          });
+
+          // Add the 'active-link' class for the clicked link
+          this.classList.add("active-link");
+
+          // Get the target content section ID from 'data-target' attribute
+          var targetId = this.getAttribute("data-target");
+
+          // Find the corresponding content section and add 'active-content' class
+          var targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            targetSection.classList.add("active-content");
+          }
+        });
+      });
+    </script>
+  </body>
 </html>

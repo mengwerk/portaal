@@ -1,99 +1,414 @@
-h2{
-    margin-bottom: 50px;
+/* Base Styles */
+body {
+  background-color: #303030;
 }
 
+h2 {
+  margin-bottom: 50px;
+}
+
+h5 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 900;
+  margin: 2px 0px;
+}
+
+hr {
+  background-color: white;
+  border: none;
+  height: 2px;
+  margin: 20px;
+}
+
+p {
+  margin: 2px;
+  font-size: 10px;
+}
+
+/* Layout Styles */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 30px;
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+  align-items: center;
+  background-color: #232323;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-bottom: solid 2px;
+  z-index: 10;
 }
 
-.logo {
-    width: 150px;
+.sidebar {
+  background-color: #232323;
+  left: 0;
+  overflow: auto;
+  padding-top: 80px;
+  position: fixed;
+  top: 0px;
+  width: 250px;
+  height: calc(100% - 70px);
+  /* z-index: 1; */
+  /* border-color: black; */
+  /* text-align: left; */
 }
 
-.user-menu {
-    position: relative;
-    display: flex;
-    align-items: center;
+/* Class Selectors */
+.content-section {
+  display: none;
 }
 
-.user-icon {
-    width: 60px;
-    cursor: pointer;
+.contacten p {
+  font-size: 11px;
 }
 
 .dropdown-menu {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 100%; /* Aligns the top of the dropdown with the bottom of the user-menu */
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
 }
-
 
 .dropdown-menu a {
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: #555;
+  color: #555;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
 }
 
-.user-menu:hover .dropdown-menu {
-    display: block;
+.filters {
+  align-items: center;
+  border-radius: 50px;
+  display: flex;
+  height: 25px;
+  padding: 1px 10px;
+  position: relative;
 }
 
-.username {
-    font-size: 16px;
-    margin-right: 10px; /* Add some space between the username and the icon */
-    color: #555; /* Set the color of the username text */
+.filtersTitle {
+  color: white;
+  margin-left: 10px;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 3 equal columns */
-    gap: 20px;
-    padding-top: 30px;
-    padding-bottom: 80px;
-    justify-items: center;
-    align-items: start;
-    margin-top: 80px; /* Adjust to make space for the header */
-}
-
-.grid-item:hover{
-    background-color: #ffdd00;
-    height: 303px;
-    padding: 17px;
-}
-
-.grid-item {
-    text-align: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 50px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    height: 300px; /* Make all grid items equal height */
-    width: 300px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  margin: 0;
+  /* width: calc(100vw - 250px); */
+  /* padding-bottom: 80px; */
+  /* padding-top: 0px; */
 }
 
 .grid-image {
-    width: 150px; /* Adjust the size as needed */
-    height: 150px; /* Adjust the size as needed */
-    border-radius: 30px;
+  border-radius: 30px;
+  height: 150px;
+  width: 150px;
 }
 
-.contacten p{
-    font-size: 11px;
+.grid-item {
+  background-color: #fafafa;
+  border-radius: 50px;
+  height: 300px;
+  /* width: 250px; */
+  text-align: center;
+  transition: transform 0.2s ease;
+  width: 100%;
 }
 
-.moodboard{
-    object-fit: cover;
+.logo {
+  width: 150px;
+}
+
+.moodboard {
+  object-fit: cover;
+}
+
+.planblokcontainer {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #303030;
+  width: 700px;
+  height: 100vh;
+}
+
+.planblokje {
+  display: grid;
+  grid-template-rows: 20px auto;
+  grid-template-columns: 350px auto 90px;
+  width: 700px;
+  border-radius: 10px;
+  /* background-color: blue; */
+}
+
+.klusdata {
+  /* background-color: yellow; */
+  grid-column: 1;
+  grid-row: 2;
+  margin-left: 11px;
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.planblokjeLabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px;
+  grid-column: 3;
+  grid-row: span 2;
+  color: #fff;
+}
+
+.planblokje img {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  object-fit: fill;
+}
+
+.subProjectLabel {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #232323;
+  color: #fff;
+  border-top-left-radius: 10px;
+  padding-left: 11px;
+}
+
+.timeLabel {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 10px;
+  color: #232323;
+}
+
+.personLabel p {
+  font-size: 10px;
+}
+
+.planblokLijn {
+  height: 1px;
+  width: 70%;
+  background-color: white;
+}
+
+.planblokdatum {
+  color: #fafafa;
+  font-size: 11px;
+  text-align: center;
+}
+
+.audio {
+  /* background-color: #ffdd00; */
+  background-color: #ecee81;
+}
+
+.kleur {
+  /* background-color: rgb(186, 80, 186); */
+  background-color: #8ddfcb;
+}
+
+.inspreken {
+  /* background-color: rgb(57, 172, 57); */
+  background-color: #edb7ed;
+}
+
+.media {
+  background-color: #82a0d8;
+}
+
+.project-arrow {
+  align-items: center;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  position: relative;
+}
+
+.project-dropdown-menu {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(240, 229, 229, 0.1);
+  display: none;
+  position: absolute;
+  right: -20px;
+  top: calc((100% + 0px));
+  width: auto;
+  z-index: 1;
+}
+
+.project-dropdown-menu a {
+  color: #555;
+  display: block;
+  font-size: 13px;
+  padding: 10px 15px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.project-menu {
+  align-items: center;
+  background-color: #ffdd00;
+  border-radius: 10px;
+  display: flex;
+  height: 35px;
+  padding: 1px 20px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.sidebar nav a {
+  color: #fafafa;
+  display: block;
+  padding: 10px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.status {
+  grid-column: span 2;
+}
+
+.status img {
+  object-fit: scale-down;
+  width: 500px;
+}
+
+.tag {
+  margin-left: 10px;
+  font-size: 14px;
+  align-items: center;
+  background-color: #ffdd00;
+  border-radius: 50px;
+  display: flex;
+  height: 25px;
+  padding: 1px 10px;
+  position: relative;
+}
+
+.user-icon {
+  cursor: pointer;
+  width: 60px;
+}
+
+.user-menu {
+  align-items: center;
+  display: flex;
+  position: absolute;
+  right: 0px;
+}
+
+.username {
+  color: #fafafa;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* ID Selectors */
+#arrowdown {
+  margin-left: 12px;
+  margin-right: 5px;
+  margin-top: 1px;
+  width: 10px;
+}
+
+#MXF {
+  opacity: 50%;
+}
+
+#home{
+  /* background-color: #232323; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+#logos {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  left: 20px;
+  /* background-color: red; */
+}
+
+/* State Styles */
+.content-section.active-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px; /* Equal to the sidebar width */
+  margin-top: 60px; /* Equal to the header height, adjust as needed */
+  width: calc(100vw - 280px); /* Viewport width minus sidebar width */
+  height: calc(100vh - 60px); /* Viewport height minus header height */
+}
+
+.grid-item:hover {
+  background-color: #ffdd00;
+  /* transform: scale(1.02); */
+}
+
+.project-arrow:hover .project-dropdown-menu {
+  display: block;
+}
+
+.project-dropdown-menu a:hover {
+  background-color: #232323;
+  color: #fafafa;
+}
+
+.sidebar nav a.active-link {
+  background-color: #303030;
+  border-color: #ffdd00;
+  color: #ffdd00;
+  position: relative;
+}
+
+.sidebar nav a:hover {
+  color: #989898;
+}
+
+.sidebar nav a.active-link,
+.sidebar nav a.active-link:hover {
+  background-color: #303030;
+  color: #ffdd00; /* This ensures that the color remains yellow even on hover */
+}
+
+.user-menu:hover .dropdown-menu {
+  display: block;
+}
+
+/* Media Queries */
+@media (max-width: 815px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-item {
+    margin: 10px auto;
+    width: 90%;
+  }
 }
